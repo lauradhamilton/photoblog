@@ -1,6 +1,7 @@
 <! DOCTYPE html>
 <html>
 <body>
+{% block content %}
     {% for post in posts %}
       <p>
           <img src="{{post.photo.url}}" height="200">
@@ -9,5 +10,6 @@
           {{post.content}}
       </p>
     {% endfor %}
+{% endblock content %}
 </body>
 </html>
