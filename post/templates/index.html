@@ -1,5 +1,13 @@
 <! DOCTYPE html>
 <html>
 <body>
+    {% for post in posts %}
+      <p>
+          <img src="{{post.photo.url}}" height="200">
+      </p>
+      <p>
+          {{post.content}}
+      </p>
+    {% endfor %}
 </body>
 </html>
